@@ -13,5 +13,11 @@ public class MainClass {
         FunctionalInterfaceTest test = new FunctionalInterfaceTestImpl();
         logger.info("String: "+test.getAString());
         logger.info("Name: " +test.getName());
+
+        FunctionalInterfaceTest test1 = ()->{
+            return "Test1 String";
+        };
+
+        logger.info("Tester1 Lambda "+ test1.getAString());
     }
 }
